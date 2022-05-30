@@ -1,6 +1,6 @@
 -
   name: this is sample of good
-  hosts: localhost
+  hosts: web
   become: true
   tasks:
         
