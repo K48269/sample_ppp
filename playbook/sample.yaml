@@ -1,0 +1,12 @@
+-
+  name: this is sample of good
+  hosts: localhost
+  become: true
+  tasks:
+        
+      - 
+        name: Read-write git checkout from github
+        ansible.builtin.git:
+          repo: https://github.com/{{git_uname}}/{{git_repo}}
+          dest: /home/hr178/Code
+
