@@ -7,6 +7,6 @@
       - 
         name: Read-write git checkout from github
         ansible.builtin.git:
-          repo: https://github.com/{{git_uname}}/{{git_repo}}
+          repo: https://github.com/K48269/sample_ppp.git
           dest: /home/hr178/Code
 
