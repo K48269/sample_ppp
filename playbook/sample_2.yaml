@@ -1,0 +1,12 @@
+-
+
+  name: Sample_docker
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Create a data container
+      docker_container:
+          name: my_sample_web
+          image: sample
+          ports:
+            - "5001:5001"
