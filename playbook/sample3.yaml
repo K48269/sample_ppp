@@ -1,5 +1,5 @@
 - name: Sample_docker
-  hosts: web_servers
+  hosts: localhost
   become: yes
   tasks:
 
