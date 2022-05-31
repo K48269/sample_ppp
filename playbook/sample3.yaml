@@ -1,4 +1,4 @@
-- name: Sample_docker
+- name: Sample
   hosts: localhost
   become: yes
   tasks:
