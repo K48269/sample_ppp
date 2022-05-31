@@ -1,7 +1,6 @@
 -
   name: this is sample of good
   hosts: web_servers
-  become: true
   tasks:
         
       - 
