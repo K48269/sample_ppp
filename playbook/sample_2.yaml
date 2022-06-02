@@ -1,7 +1,7 @@
 -
 
   name: Sample_docker
-  hosts: target1
+  hosts: localhost
   tasks:
     - name: Create a data container
       docker_container:
