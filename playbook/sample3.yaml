@@ -1,6 +1,6 @@
 - name: Sample
-  hosts: localhost
-  tasks:
+  hosts: web_servers
+  tasks: 
 
       - name: This is a Sample from the service
         service:
