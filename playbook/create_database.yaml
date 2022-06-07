@@ -1,0 +1,19 @@
+- name: create a bucket
+  hosts: localhost
+  vars:
+    resource_name: ansible_bucket_one
+    gcp_project: verdant-nova-350116
+    gcp_cred_kind: serviceaccount
+    gcp_cred_file: gcp_connection
+
+
+  tasks:
+    - name: create a bucket
+      google.cloud.gcp_storage_bucket:
+        name: "{{ resource_name }}"
+        project: "{{ gcp_project }}"
+        auth_kind: "{{ gcp_cred_kind }}"
+        service_account_file: "{{ gcp_cred_file }}"
+        state: present
+      register: bucket
+
