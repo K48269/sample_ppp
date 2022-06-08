@@ -4,7 +4,7 @@
     resource_name: ansible_bucket_one
     gcp_project: verdant-nova-350116
     gcp_cred_kind: serviceaccount
-    gcp_cred_file: gcp_connection
+    gcp_cred_file: gcp_credentilas
 
 
   tasks:
