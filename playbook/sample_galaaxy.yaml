@@ -1,0 +1,11 @@
+
+- name: getting galaxy details 
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: list the collections
+      cmd: ansible-galaxy list
+      register: ans_result
+
+    - name: output
+      debug: ans_result
